@@ -28,27 +28,49 @@
             left: 0;
             bottom: 0;
             right: 0;
+            overflow: hidden;
+            
         }
 
-        #icircle, #rcircle{
-            background-color: #ffcc00;
+        #lcircle{
             width: 100px;
             height: 100px;
-            border-radius: 100%;
+            border-radius: 50px;
+            background-color: #fc0;
+            position: absolute;
+            top: -50px;
+            left: -50px;
         }
 
-        #icircle{
+
+        #rcircle{
+            width: 100px;
+            height: 100px;
+            border-radius: 50px;
+            background-color: #fc0;
             position: absolute;
-            right: -50px;
-            bottom: -50px;
+            top: 150px;
+            left: 350px;
         }
+
+        /* #gcircle{
+            width: 100px;
+            height: 100px;
+            border-radius: 50px;
+            background-color: #fc0;
+            position: relative;
+            top: 0px;
+            left: 0px;
+        } */
+        
         
     </style>
 </head>
 <body>
     <div id="square">
-        <div id="icirlce"></div>
+        <div id="lcircle"></div>
         <div id="rcircle"></div>
+        <div id="gcircle"></div>
     </div>
 </body>
 </html>
