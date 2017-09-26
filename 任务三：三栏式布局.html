@@ -1,3 +1,9 @@
+<!-- 
+    @author: Philip
+    @Date: 2017-9-26
+ -->
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,65 +12,83 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>任务三：三栏式布局</title>
     <style type="text/css">
-        
        
-        #main{
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+
+        div{
+            padding: 20px;
+        }
+
+        #container{
             background-color: #eee;
-            margin-top: 20px;
-            margin-left: 20px;
-            margin-right: 20px;
+            margin: 20px;
+            border: 1px solid #999;
             overflow: hidden;
+        }
+
+        #container > div{
+            border: 1px solid #999;
+            display: inline-block;
+            vertical-align: top;
         }
 
         #container-left{
             float: left;
             width: 200px;
-            margin-left: 20px;
-            margin-top: 20px;
-            border: 1px solid #999;
+            margin-right: 20px;
         }
 
-        #container-middle{
-            border: 1px solid #999;
-            margin-top: 20px;
-            display: inline-block;
-            margin-left: 245px;
-            margin-right: 165px;
+        span{
+            vertical-align: top;
         }
 
         #container-right{
             float: right;
             width: 120px;
-            border: 1px solid #999;
-            margin-top: 20px;
-            margin-right: 20px;
+        }
+
+        #container-middle{
+            width: calc(100% - 120px - 200px - 40px);
         }
 
         .img-1{
             width: 80px;
             height: 80px;
-            margin-top: 20px;
-            margin-left: 20px;
-            margin-right: 20px;
-        }
-        
-        .img-1:last-child{
             margin-bottom: 20px;
         }
+
+        .img-2{
+            width: 80px;
+            height: 80px;
+            margin-bottom: 0px;
+        }
+
+        .img-1:last-child{
+            margin-bottom: 0px;
+        }
+
 
     </style>
 </head>
 <body>
-    <div id="main">
+    <div id="container">
         <div id="container-left">
-            <img class="img-1" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1506424362406&di=9a3093d507115b3e4f44dc853da3b7ae&imgtype=0&src=http%3A%2F%2Fs13.sinaimg.cn%2Fmiddle%2F9efc17c2gbfacf82f79cc%26690" width="80" height="80" alt="">
+            <img class="img-2" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1506424362406&di=9a3093d507115b3e4f44dc853da3b7ae&imgtype=0&src=http%3A%2F%2Fs13.sinaimg.cn%2Fmiddle%2F9efc17c2gbfacf82f79cc%26690" alt="">
+            <span>团队名称</span>
         </div>
 
         <div id="container-middle">
             <p>关于你们团队的介绍</p>
-            <p>可以给我解释一下团队名称的来历，或是分别介绍你们的团队成员</p>
-            <p>（以下为示例）</p>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum aut omnis facilis! Iusto doloremque ipsum, deleniti ipsam explicabo tempora ratione incidunt, eum temporibus, veritatis voluptatibus aspernatur consectetur. Doloribus, amet enim!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum aut omnis facilis! Iusto doloremque ipsum, deleniti ipsam explicabo tempora ratione incidunt, eum temporibus, veritatis voluptatibus aspernatur consectetur. Doloribus, amet enim!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum aut omnis facilis! Iusto doloremque ipsum, deleniti ipsam explicabo tempora ratione incidunt, eum temporibus, veritatis voluptatibus aspernatur consectetur. Doloribus, amet enim!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum aut omnis facilis! Iusto doloremque ipsum, deleniti ipsam explicabo tempora ratione incidunt, eum temporibus, veritatis voluptatibus aspernatur consectetur. Doloribus, amet enim!</p>
+            <p>关于你们团队的介绍，关于你们团队的介绍，关于你们团队的介绍，关于你们团队的介绍，关于你们团队的介绍，关于你们团队的介绍，关于你们团队的介绍，关于你们团队的介绍，关于你们团队的介绍，关于你们团队的介绍，关于你们团队的介绍，关于你们团队的介绍，关于你们团队的介绍，关于你们团队的介绍，关于你们团队的介绍，关于你们团队的介绍，关于你们团队的介绍，关于你们团队的介绍，关于你们团队的介绍，关于你们团队的介绍</p>
+            <p>关于你们团队的介绍，关于你们团队的介绍，关于你们团队的介绍，关于你们团队的介绍，关于你们团队的介绍，关于你们团队的介绍，关于你们团队的介绍，关于你们团队的介绍，关于你们团队的介绍，关于你们团队的介绍，关于你们团队的介绍，关于你们团队的介绍，关于你们团队的介绍，关于你们团队的介绍，关于你们团队的介绍，关于你们团队的介绍，关于你们团队的介绍，关于你们团队的介绍，关于你们团队的介绍，关于你们团队的介绍</p>
+            <p>关于你们团队的介绍，关于你们团队的介绍，关于你们团队的介绍，关于你们团队的介绍，关于你们团队的介绍，关于你们团队的介绍，关于你们团队的介绍，关于你们团队的介绍，关于你们团队的介绍，关于你们团队的介绍，关于你们团队的介绍，关于你们团队的介绍，关于你们团队的介绍，关于你们团队的介绍，关于你们团队的介绍，关于你们团队的介绍，关于你们团队的介绍，关于你们团队的介绍，关于你们团队的介绍，关于你们团队的介绍</p>
+            <p>关于你们团队的介绍，关于你们团队的介绍，关于你们团队的介绍，关于你们团队的介绍，关于你们团队的介绍，关于你们团队的介绍，关于你们团队的介绍，关于你们团队的介绍，关于你们团队的介绍，关于你们团队的介绍，关于你们团队的介绍，关于你们团队的介绍，关于你们团队的介绍，关于你们团队的介绍，关于你们团队的介绍，关于你们团队的介绍，关于你们团队的介绍，关于你们团队的介绍，关于你们团队的介绍，关于你们团队的介绍</p>
+            <p>关于你们团队的介绍，关于你们团队的介绍，关于你们团队的介绍，关于你们团队的介绍，关于你们团队的介绍，关于你们团队的介绍，关于你们团队的介绍，关于你们团队的介绍，关于你们团队的介绍，关于你们团队的介绍，关于你们团队的介绍，关于你们团队的介绍，关于你们团队的介绍，关于你们团队的介绍，关于你们团队的介绍，关于你们团队的介绍，关于你们团队的介绍，关于你们团队的介绍，关于你们团队的介绍，关于你们团队的介绍</p>
+            <p>关于你们团队的介绍，关于你们团队的介绍，关于你们团队的介绍，关于你们团队的介绍，关于你们团队的介绍，关于你们团队的介绍，关于你们团队的介绍，关于你们团队的介绍，关于你们团队的介绍，关于你们团队的介绍，关于你们团队的介绍，关于你们团队的介绍，关于你们团队的介绍，关于你们团队的介绍，关于你们团队的介绍，关于你们团队的介绍，关于你们团队的介绍，关于你们团队的介绍，关于你们团队的介绍，关于你们团队的介绍</p>
         </div>
 
         <div id="container-right">
