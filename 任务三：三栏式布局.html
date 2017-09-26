@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>任务三：三栏式布局</title>
+    <style type="text/css">
+        
+       
+        #main{
+            background-color: #eee;
+            margin-top: 20px;
+            margin-left: 20px;
+            margin-right: 20px;
+            overflow: hidden;
+        }
+
+        #container-left{
+            float: left;
+            width: 200px;
+            margin-left: 20px;
+            margin-top: 20px;
+            border: 1px solid #999;
+        }
+
+        #container-middle{
+            border: 1px solid #999;
+            margin-top: 20px;
+            display: inline-block;
+            margin-left: 245px;
+            margin-right: 165px;
+        }
+
+        #container-right{
+            float: right;
+            width: 120px;
+            border: 1px solid #999;
+            margin-top: 20px;
+            margin-right: 20px;
+        }
+
+        .img-1{
+            width: 80px;
+            height: 80px;
+            margin-top: 20px;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+        
+        .img-1:last-child{
+            margin-bottom: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div id="container-left">
+            <img class="img-1" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1506424362406&di=9a3093d507115b3e4f44dc853da3b7ae&imgtype=0&src=http%3A%2F%2Fs13.sinaimg.cn%2Fmiddle%2F9efc17c2gbfacf82f79cc%26690" width="80" height="80" alt="">
+        </div>
+
+        <div id="container-middle">
+            <p>关于你们团队的介绍</p>
+            <p>可以给我解释一下团队名称的来历，或是分别介绍你们的团队成员</p>
+            <p>（以下为示例）</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum aut omnis facilis! Iusto doloremque ipsum, deleniti ipsam explicabo tempora ratione incidunt, eum temporibus, veritatis voluptatibus aspernatur consectetur. Doloribus, amet enim!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum aut omnis facilis! Iusto doloremque ipsum, deleniti ipsam explicabo tempora ratione incidunt, eum temporibus, veritatis voluptatibus aspernatur consectetur. Doloribus, amet enim!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum aut omnis facilis! Iusto doloremque ipsum, deleniti ipsam explicabo tempora ratione incidunt, eum temporibus, veritatis voluptatibus aspernatur consectetur. Doloribus, amet enim!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum aut omnis facilis! Iusto doloremque ipsum, deleniti ipsam explicabo tempora ratione incidunt, eum temporibus, veritatis voluptatibus aspernatur consectetur. Doloribus, amet enim!</p>
+        </div>
+
+        <div id="container-right">
+            <img src="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=3162199320,1515928916&fm=27&gp=0.jpg" alt="" class="img-1">
+            <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1506426502080&di=0327bb944aea12427e66264a50f90565&imgtype=0&src=http%3A%2F%2Fp.3761.com%2Fpic%2F9091384396048.jpg" alt="" class="img-1">
+            <img src="https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=323463141,4283304238&fm=27&gp=0.jpg" alt="" class="img-1">
+            <img src="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1111533309,1313454667&fm=27&gp=0.jpg" alt="" class="img-1">   
+        </div>
+    </div>
+</body>
+</html>
